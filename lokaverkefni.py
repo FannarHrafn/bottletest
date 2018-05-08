@@ -10,7 +10,7 @@ for i in gogn['data']:
     print(i['img'])
 @route('/')
 def index():
-        return template('index.tpl',gogn=gogn)
+        return template('index.html',gogn=gogn)
 #bendi á static skráina og að allt í henni sé static
 @route('/maze')
 def maze():
